@@ -55,3 +55,7 @@ class ImageUploadView(APIView):
             os.unlink(temp_file_path)
 
             return Response({'class': predicted_class_name, 'category': category, "is_intruder": is_intruder}, status=status.HTTP_200_OK)
+
+class HomeApiView(APIView):
+    def get(self, request):
+        return Response({'message': 'Welcome to the Image Classification API!'}, status=status.HTTP_200_OK)
