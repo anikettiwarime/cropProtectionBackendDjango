@@ -4,9 +4,9 @@ def find_class(class_index):
     class_mapping = {
         0: "butterfly",
         1: "cat",
-        2: "chicken",
+        4: "chicken",
         3: "cow",
-        4: "dog",
+        2: "dog",
         5: "elephant",
         6: "horse",
         7: "sheep",
